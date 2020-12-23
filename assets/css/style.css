@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color:wheat;
+}
+p{
+    font-size: 26x;
+}
+
+/* header */
+header {
+    width:100%;
+    height:10vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:999;
+    /*aid*/
+    background-color: cadetblue;
+}
+
+/* navi */
+header nav {
+      /*aid*/
+   background-color: rgb(194, 113, 226);
+}
+header nav ul {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    list-style:none;
+    padding:10px;
+
+     /*aid*/
+   background-color: rgb(255, 255, 255);
+}
+header nav ul li{
+    margin:5px;
+    padding:8px;
+
+   /*aid*/
+   background-color: rgb(168, 141, 141);
+}
+header nav ul li a {
+    padding:20px;
+    margin:0 5px 0 5px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.title {
+    display:flex;
+    padding:20px;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+   /*aid*/
+   background-color: rgb(224, 129, 129);
+}
+.title h1 {
+    padding:5px;
+    
+     /*aid*/
+   background-color: rgb(173, 80, 80);
+}
+/**/
+
+/* hero portfolio projects contact */
+.hero {
+    display:flex;
+    flex-wrap:wrap;
+    width:90vw;
+    margin:15px auto 15px auto;
+
+     /*aid*/
+     background-color: rgb(77, 31, 161);
+}
+.content {
+    justify-content:space-around;
+}
+/**/
+
+/* portfolio */
+.portfolio, .blog {
+    width: 100%;
+     /*aid*/
+     background-color: rgb(130, 90, 206);
+}
+
+/**/
+
+/* projects */
+.project {
+    display:block;
+}
+.projectgrid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
+    grid-gap:20px;
+    background-color: aqua;
+    justify-content:space-between;
+    height:40vh;
+
+     /*aid*/
+     background-color: rgb(146, 206, 90);
+}
+.one {
+    grid-column:1/ span 2;
+    grid-row:1 / span 1;
+    /*aid*/
+    background-color: rgb(228, 161, 98);
+}
+.two {
+
+    /*aid*/
+    background-color: rgb(221, 116, 17);
+}
+.three {
+
+    /*aid*/
+    background-color: rgb(221, 116, 17);
+}
+.four{
+
+    /*aid*/
+    background-color: rgb(221, 116, 17);
+}
+.five {
+
+    /*aid*/
+    background-color: rgb(221, 116, 17);
+}
+/**/
+
+/* contact */
+.contact {
+    height:20vh;
+}
+.contactgrid {
+    display:grid;
+    grid-gap:10px;
+    width:100%;
+    grid-template-columns:0.5fr repeat(2,2fr);
+    padding:10px;
+}
+.contactgrid-1 {
+    writing-mode:vertical-lr;
+    transform:rotate(180deg);
+
+    background-color: rgb(221, 116, 17);
+}
+/**/
+
+/* footer section */
+footer {
+    display:flex;
+    justify-content:space-between;
+    height:8vh;
+    font-size:0.9rem;
+    /*aid*/
+    background-color: rgb(70, 11, 11);
+}
+.designby {
+    margin-right:20px;
+}
+.media-links {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr);
+    grid-gap:5px;
+    padding:5px;
+    margin-left:30px;
+
+     /*aid*/
+   background-color: rgb(153, 151, 48);
+}
+.medialink {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:5px;
+     /*aid*/
+   background-color: rgb(151, 224, 129);
+}
+.media-links a {
+    font-size:0.7rem;
+    text-decoration:none;
+    
+}
