@@ -7,9 +7,6 @@ body{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    background-color:wheat;
 }
-p{
-    font-size: 26x;
-}
 
 /* header */
 header {
@@ -24,6 +21,11 @@ header {
     z-index:999;
     /*aid*/
     background-color: cadetblue;
+}
+.title h1 {
+    font-size:38px;
+    font-family: 'Charmonman', cursive;
+    color: bisque;
 }
 
 /* navi */
@@ -78,27 +80,73 @@ header nav ul li a {
     flex-wrap:wrap;
     width:90vw;
     margin:15px auto 15px auto;
+    padding:5px;
 
      /*aid*/
      background-color: rgb(77, 31, 161);
 }
-.content {
-    justify-content:space-around;
-}
 /**/
 
-/* portfolio */
-.portfolio, .blog {
-    width: 100%;
-     /*aid*/
-     background-color: rgb(130, 90, 206);
+/* aboutme */
+.aboutme-container {
+    flex-direction:column;
+    justify-content:space-around;
+    
 }
+.aboutme-content,
+.blog-content {
+    display:block;
+    background-color: rgb(78, 88, 221);
+}
+.aboutme-title,
+.blog-title {
+   width:100%;
+}
+.aboutmeimg {
+    width:25%;
+    height:150px;
+    float:right;
+     /*aid*/
+     background-color: rgb(197, 186, 231);
+}
+.aboutme-title h2,
+.blog-title h2 {
+    padding:10px;
+
+     /*aid*/
+     background-color: rgb(231, 43, 238);
+}
+.aboutme-content article {
+    width:70%;
+   
+   /*aid*/
+   background-color: rgb(108, 94, 109);
+}
+.aboutme-content article object,
+.blog-content article object {
+    width:100%;
+    /*aid*/
+    background-color: rgb(85, 247, 85);
+}
+
+.blog-content article {
+    display:none;
+}
+.aboutme p{
+    font-size: 26x;
+    background-color: cadetblue;
+}
+
 
 /**/
 
 /* projects */
 .project {
-    display:block;
+    flex-direction: column;
+}
+.project-title {
+    width:100%;
+    height:50px;
 }
 .projectgrid {
     display:grid;
@@ -142,7 +190,7 @@ header nav ul li a {
 
 /* contact */
 .contact {
-    height:20vh;
+    height:15vh;
 }
 .contactgrid {
     display:grid;
@@ -152,8 +200,11 @@ header nav ul li a {
     padding:10px;
 }
 .contactgrid-1 {
+    display:flex;
     writing-mode:vertical-lr;
     transform:rotate(180deg);
+    align-items:center;
+    justify-content:center;
 
     background-color: rgb(221, 116, 17);
 }
@@ -163,7 +214,7 @@ header nav ul li a {
 footer {
     display:flex;
     justify-content:space-between;
-    height:8vh;
+    height:5vh;
     font-size:0.9rem;
     /*aid*/
     background-color: rgb(70, 11, 11);
@@ -173,8 +224,7 @@ footer {
 }
 .media-links {
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    grid-template-rows:repeat(2,1fr);
+    grid-template-columns:repeat(4,1fr);
     grid-gap:5px;
     padding:5px;
     margin-left:30px;
