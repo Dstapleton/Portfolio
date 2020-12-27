@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/medialinks.css">
+    <link rel="stylesheet" href="./assets/css/aboutme.css">
     <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Open+Sans:ital,wght@0,700;1,300&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto&family=Sacramento&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,19 +26,19 @@
     <!-- aboutme content -->
     <section id="aboutMe" class="hero aboutme-container">
         <!-- aboutme -->
-        <div class="aboutme-content">
-            <div class="aboutme-title">
+        <div  class="aboutme-content">
+            <div class="aboutme-title accordion">
                 <h2>About Me</h2>
             </div>
             <!-- img -->
-            <div class="aboutmeimg">Port image</div>
             <article>
                 <object id=""data="./aboutme.html" type="">Aboutme</object>
+                <div class="aboutmeimg">Port image</div>
             </article>
         </div>
         <!-- blog -->
         <div class="blog-content">
-            <div class="blog-title">
+            <div class="blog-title accordion">
                 <h2>Blog</h2>
             </div>
             <article>
@@ -49,14 +51,22 @@
         <div class="project-title">
            <h2>Projects</h2>
         </div>
-        <div class="projectgrid">
-            <div class="runbuddy">
+        <div class="projectgrid btn">
+            <div id="runbuddy" class="runbuddy btn">
                 <h3>Runbuddy</h3>
             </div>
-            <div class="passwordgenerater">two</div>
-            <div class="three"></div>
-            <div class="four"></div>
-            <div class="five">five</div>
+            <div id="genetor" class="passwordgenerator btn">
+                <h3>Password Generator</h3>
+            </div>
+            <div id="quiz" class="comingsoon btn">
+                <h3>Quiz</h3>
+            </div>
+            <div id="robotgame" class="comingsoon btn">
+                <h3>Robot Game</h3>
+            </div>
+            <div id="unitygameapp" class="comingsoon btn">
+                <h3>Unity Game</h3>
+            </div>
         </div>
     </section>
     <!-- contact -->
@@ -76,18 +86,15 @@
 
     <footer>
         <div class="media-links">
-            <div class="linkedin iconlogo"></a>
-            </div>
-            <div class="github iconlogo"></div>
-            <div class="twiter iconlogo">
-                <a href=""></a>
-            </div>
-            <div onclick="window.location.href='aboutme.html'" class="facebook iconlogo">
-            </div>
+            <div id="linkedin" class="linkedin iconlogo"></div>
+            <div id="github" class="github iconlogo"></div>
+            <div id="twitter" class="twiter iconlogo"></div>
+            <div id="facebook" class="facebook iconlogo"></div>
         </div>
         <div class="designby">
             <h3>Design by DS 2020</h3>
         </div>
     </footer>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
