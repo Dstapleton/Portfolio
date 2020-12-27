@@ -1,0 +1,42 @@
+/* aboutme */
+.aboutme-container {
+    flex-direction:column;
+    justify-content:space-around;
+}
+.aboutme-content,
+.blog-content {
+    margin:5px 5px;
+    display:block;
+}
+.aboutme-title,
+.blog-title {
+   width:100%;
+   background-color:var(--main-color);
+}
+.aboutmeimg {
+    width:25%;
+    height:150px;
+    float:right;
+}
+.aboutme-title h2,
+.blog-title h2 {
+    padding:10px;
+    color:var(--secondary-color);
+}
+.aboutme-content article,
+.blog-content article {
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.2s ease-out;
+}
+.aboutme-content article object {
+    width:70%;
+   
+}
+.blog-content article object {
+    width:100%;
+}
+.aboutme p{
+    font-size: 26x;
+}
+/**/

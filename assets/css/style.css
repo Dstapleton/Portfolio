@@ -13,8 +13,7 @@
 body{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    background-color:rgb(10, 60, 73);
-  font-family: 'Overlock', cursive;
-
+    font-family: 'Overlock', cursive; 
 }
 
 /* header */
@@ -78,49 +77,6 @@ header nav ul li a {
 }
 /**/
 
-/* aboutme */
-.aboutme-container {
-    flex-direction:column;
-    justify-content:space-around;
-    
-}
-.aboutme-content,
-.blog-content {
-    display:block;
-}
-.aboutme-title,
-.blog-title {
-   width:100%;
-   background-color:var(--main-color);
-}
-.aboutmeimg {
-    width:25%;
-    height:150px;
-    float:right;
-}
-.aboutme-title h2,
-.blog-title h2 {
-    padding:10px;
-    color:var(--secondary-color);
-}
-.aboutme-content article {
-    width:70%;
-}
-.aboutme-content article object,
-.blog-content article object {
-    width:100%;
-}
-
-.blog-content article {
-    display:none;
-}
-.aboutme p{
-    font-size: 26x;
-}
-
-
-/**/
-
 /* projects */
 .project {
     flex-direction: column;
@@ -128,7 +84,6 @@ header nav ul li a {
 .project-title {
     display:flex;
     padding:5px;
-    width:20%;
     height:50px;
     background-color:var(--main-color);
     margin-bottom:10px;
@@ -144,20 +99,45 @@ header nav ul li a {
     grid-template-rows:repeat(2,1fr);
     grid-gap:20px;
     justify-content:space-between;
-    height:40vh;
+    height:50vh;
     padding:5px;
 }
 .runbuddy {
     grid-column:1/ span 2;
     grid-row:1 / span 1;
+    background-image:url(../images/runbuddy.png);
+    background-size:cover;
+    background-position:center center;
+    background-attachment:local;
+    position:relative;
 }
-.passwordgenerater,
+.runbuddy h3,
+.passwordgenerator h3,
+.comingsoon h3 {
+    text-indent:20px;
+    widows: 100%;
+    padding:5px;
+    background-color: #9041a8de;
+}
+.passwordgenerator {
+    background-image:url(../images/passwordgenerator.png);
+    background-size:cover;
+    background-position:center center;
+    background-attachment:local;
+}
+.passwordgenerator,
 .runbuddy,
-.three,.four, .five {
-    background-color:var(--grid-color);
+.comingsoon {
+    background-color:rgba(160, 70, 17, 0.472);
+}
+.comingsoon {
+    background-image:url(../images/coming_soon.svg);
+    background-size:90% 70%;
+    background-repeat:no-repeat;
+    background-position:center bottom;
+    background-attachment:fixed;
 }
 /**/
-
 /* contact */
 .contact {
     height:15vh;
@@ -177,6 +157,9 @@ header nav ul li a {
     justify-content:center;
     background-color:var(--main-color);
 }
+.btn {
+    cursor: pointer;
+}
 /**/
 
 /* footer section */
@@ -186,9 +169,7 @@ footer {
     height:5vh;
     font-size:0.9rem;
     background-color:var(--main-color);
-}
-.designby {
-    margin-right:20px;
+    width:100%;
 }
 .email {
     background-size:contain;
@@ -205,39 +186,3 @@ footer {
     background-image:url(../images/old-typical-phone.svg);
 }
     
-.media-links {
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-gap:5px;
-    padding:5px;
-    margin-left:80px;
-    cursor:pointer;
-    width:10%;
-}
-.medialink {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:5px;   
-}
-.media-links a {
-    font-size:0.7rem;
-    text-decoration:none;
-}
-.iconlogo {
-   
-    background-size:100% 100%;
-    background-position:center;
-}   
-.linkedin {
-    background-image:url(../images/linkedin.svg);
-}
-.github {
-    background-image:url(../images/github.svg);
-}
-.twiter {
-    background-image:url(../images/twitter1.svg);
-}
-.facebook {
-    background-image:url(../images/facebook.svg);
-}

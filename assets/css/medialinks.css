@@ -1,0 +1,39 @@
+.media-links {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap:5px;
+    padding:5px;
+    margin-left:80px;
+    cursor:pointer;
+    width:20%;
+}
+.medialink {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:5px;   
+}
+.media-links a {
+    font-size:0.7rem;
+    text-decoration:none;
+}
+.iconlogo {
+   margin: 0 5px 0 5px;
+    background-size:100% 100%;
+    background-position:center;
+}   
+.linkedin {
+    background-image:url(../images/linkedin.svg);
+}
+.github {
+    background-image:url(../images/github.svg);
+}
+.twiter {
+    background-image:url(../images/twitter1.svg);
+}
+.facebook {
+    background-image:url(../images/facebook.svg);
+}
+.designby {
+    margin-right:20px;
+}
