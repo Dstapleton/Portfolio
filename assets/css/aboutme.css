@@ -10,33 +10,59 @@
 }
 .aboutme-title,
 .blog-title {
-   width:100%;
-   background-color:var(--main-color);
+    cursor:pointer;
+    width:100%;
+    background-color:var(--main-color);
 }
-.aboutmeimg {
-    width:25%;
-    height:150px;
-    float:right;
+.aboutme-content article {
+    display:flex;
+    justify-content:space-between;
+}
+.aboutme-content article img {
+    margin:10px 10px 0 0;
+    width:15rem;
+    height:100%;
+    background-color: blue;
+    transition:opacity 0.3s ease-out;
+}
+.aboutme-content article p {
+    color: rgb(237, 255, 196);
+    margin:10px 0 0 10px;
+    width:80%;
+    font-size: 18px;
 }
 .aboutme-title h2,
 .blog-title h2 {
+    width:100%;
     padding:10px;
     color:var(--secondary-color);
 }
 .aboutme-content article,
 .blog-content article {
     max-height:0;
-    overflow:hidden;
+    opacity:0;
     transition:max-height 0.2s ease-out;
 }
-.aboutme-content article object {
-    width:70%;
-   
-}
-.blog-content article object {
+.accordion {
+    position: relative;
     width:100%;
 }
-.aboutme p{
-    font-size: 26x;
+.active, .accordion:hover h2{
+    color:rgb(4, 41, 39);
+    background-color: rgb(90, 84, 35);
 }
+.accordion:after {
+    position:absolute;
+    content:'\002B';
+    font-size:30px;
+    color: rgb(84, 167, 139);
+    top:10%;
+    left:90%;
+}
+.active:after {
+    content:"\2212";
+    top:10%;
+    left:90%;
+}
+
 /**/

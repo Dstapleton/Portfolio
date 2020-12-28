@@ -1,0 +1,19 @@
+/* contact */
+.contact {
+    height:15vh;
+}
+.contactgrid {
+    display:grid;
+    grid-gap:10px;
+    width:100%;
+    grid-template-columns:0.5fr repeat(2,2fr);
+    padding:10px;
+}
+.contactgrid-1 {
+    display:flex;
+    writing-mode:vertical-lr;
+    transform:rotate(180deg);
+    align-items:center;
+    justify-content:center;
+    background-color:var(--main-color);
+}

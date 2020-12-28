@@ -71,96 +71,19 @@ header nav ul li a {
 .hero {
     display:flex;
     flex-wrap:wrap;
-    width:90vw;
+    width:60%;
     margin:15px auto 15px auto;
     padding:5px;
 }
 /**/
 
-/* projects */
-.project {
-    flex-direction: column;
-}
-.project-title {
-    display:flex;
-    padding:5px;
-    height:50px;
-    background-color:var(--main-color);
-    margin-bottom:10px;
-    border-radius:5px;
-    justify-content:center;
-}
-.project-title h2 {
-    color:var(--secondary-color);
-}
-.projectgrid {
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows:repeat(2,1fr);
-    grid-gap:20px;
-    justify-content:space-between;
-    height:50vh;
-    padding:5px;
-}
-.runbuddy {
-    grid-column:1/ span 2;
-    grid-row:1 / span 1;
-    background-image:url(../images/runbuddy.png);
-    background-size:cover;
-    background-position:center center;
-    background-attachment:local;
-    position:relative;
-}
-.runbuddy h3,
-.passwordgenerator h3,
-.comingsoon h3 {
-    text-indent:20px;
-    widows: 100%;
-    padding:5px;
-    background-color: #9041a8de;
-}
-.passwordgenerator {
-    background-image:url(../images/passwordgenerator.png);
-    background-size:cover;
-    background-position:center center;
-    background-attachment:local;
-}
-.passwordgenerator,
-.runbuddy,
-.comingsoon {
-    background-color:rgba(160, 70, 17, 0.472);
-}
-.comingsoon {
-    background-image:url(../images/coming_soon.svg);
-    background-size:90% 70%;
-    background-repeat:no-repeat;
-    background-position:center bottom;
-    background-attachment:fixed;
-}
 /**/
-/* contact */
-.contact {
-    height:15vh;
-}
-.contactgrid {
-    display:grid;
-    grid-gap:10px;
-    width:100%;
-    grid-template-columns:0.5fr repeat(2,2fr);
-    padding:10px;
-}
-.contactgrid-1 {
-    display:flex;
-    writing-mode:vertical-lr;
-    transform:rotate(180deg);
-    align-items:center;
-    justify-content:center;
-    background-color:var(--main-color);
-}
 .btn {
     cursor: pointer;
 }
 /**/
+
+
 
 /* footer section */
 footer {

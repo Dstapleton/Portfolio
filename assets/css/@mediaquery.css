@@ -1,0 +1,17 @@
+/**/
+@media screen and (max-width:980px){
+   .hero {
+       width:80%;
+   }
+}
+/**/
+@media screen and (max-width:768px){
+   .hero {
+       width:100%;
+   }
+}
+
+/**/
+@media screen and (max-width:575px){
+    
+}
