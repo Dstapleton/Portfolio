@@ -36,10 +36,7 @@ function accordion () {
         panel.style.opacity = 1;
     }
 }
-//
-for(i = 0; i < acc.length; i++){
-     acc[i].addEventListener("click",accordion);
-}
+
 // github site
 function githubsite() {
     window.open("https://github.com/Dstapleton");
@@ -50,12 +47,16 @@ function runbuddysite() {
     window.open("https://dstapleton.github.io/RunBuddy/");
 }
 
-//
+// password generator app
 function genertorapp() {
     window.open("https://dstapleton.github.io/password-generator/");
 }
 // -- events -- //
 
+//event listener for accordion on aboutme setion
+for(i = 0; i < acc.length; i++){
+     acc[i].addEventListener("click",accordion);
+}
 // projects
 password.addEventListener("click", genertorapp);
 runbuddy.addEventListener("click", runbuddysite);

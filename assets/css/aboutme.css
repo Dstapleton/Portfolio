@@ -10,8 +10,8 @@
 }
 .aboutme-title,
 .blog-title {
+    border-radius:5px;
     cursor:pointer;
-    width:100%;
     background-color:var(--main-color);
 }
 .aboutme-content article {
@@ -25,15 +25,16 @@
     background-color: blue;
     transition:opacity 0.3s ease-out;
 }
-.aboutme-content article p {
+.aboutme-container article p {
+    margin:10px 10px 0 10px;
+}
+.aboutme-content, .blog-content article p {
     color: rgb(237, 255, 196);
-    margin:10px 0 0 10px;
-    width:80%;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 .aboutme-title h2,
 .blog-title h2 {
-    width:100%;
+    border-radius:5px;
     padding:10px;
     color:var(--secondary-color);
 }
@@ -41,6 +42,7 @@
 .blog-content article {
     max-height:0;
     opacity:0;
+    overflow:hidden;
     transition:max-height 0.2s ease-out;
 }
 .accordion {
