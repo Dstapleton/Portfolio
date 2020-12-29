@@ -35,9 +35,11 @@
     text-indent:20px;
     widows: 100%;
     padding:5px;
-    background-color: #584051de;
+    background-color:var(--secondary-color);
     position:relative;
     z-index:1;
+    color:var(--main-color);
+    transition:background-color 0.5s ease-out;
 }
 .passwordgenerator {
     background-image:url(../images/passwordgenerator.png);
@@ -49,7 +51,7 @@
 .runbuddy,
 .comingsoon {
     position:relative;
-    background-color:rgba(160, 70, 17, 0.472);
+    background-color:rgb(17, 131, 160);
 }
 .comingsoon {
     background-image:url(../images/coming_soon.svg);
@@ -68,7 +70,7 @@
 .runbuddy:hover h3,
 .comingsoon:hover h3,
 .passwordgenerator:hover h3 {
-    background-color: #c7ad3ade;
+    background-color:var(--secondary-highlight);
 }
 
 .runbuddy:hover,
@@ -81,7 +83,7 @@
 .passwordgenerator::after{ 
     content:"";
     position:absolute;
-    background:linear-gradient(rgba(0, 0, 255, 0),rgb(2, 84, 95));
+    background:linear-gradient(rgba(0, 0, 255, 0),var(--tertiary-color));
     width:100%;
     height:0;
     bottom:0;

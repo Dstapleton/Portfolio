@@ -32,8 +32,11 @@
     margin-right:10%;
     align-items:center;
     justify-content:center;
-    background-color: antiquewhite;
+    background-color:var(--tertiary-color);
+}
+.designby h3 {
+    color:var(--secondary-color);
 }
 .media-links > div:hover {
-    background-color: aliceblue;
+    background-color:var(--tertiary-color);
 }
