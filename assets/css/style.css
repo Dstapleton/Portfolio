@@ -4,16 +4,17 @@
     box-sizing:border-box;
 }
 :root {
-    --main-color:#2296A8;
-    --secondary-color:#0fd6f5;
-    --title-color:#f5d800;
-    --grid-color:#e79a1d;
-    --backdrop-color:#541e64;
+    --main-color:#00779E;
+    --main-highlight:#1FB8EB;
+    --secondary-color:#EBBA0C;
+    --secondary-highlight:#ffdb59;
+    --tertiary-color:#5E039E;
+    --tertiary-heighlight:#A43FEB;
+
 }
 body{
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   background-color:rgb(10, 60, 73);
-    font-family: 'Overlock', cursive; 
+    font-family: 'overlock', sans-serif;
+    background-color:var(--main-highlight);
 }
 
 /* header */
@@ -27,14 +28,12 @@ header {
     position:sticky;
     top:0;
     z-index:999;
+    box-shadow:0 5px 5px rgb(4, 10, 36);
     background-color:var(--main-color);
 }
 
 /* navi */
-header nav {
-      /*aid*/
-   background-color: rgba(133, 125, 60, 0);
-}
+
 header nav ul {
     display:flex;
     flex-wrap:wrap;
@@ -51,19 +50,25 @@ header nav ul li a {
     padding:20px;
     margin:0 5px 0 5px;
     text-decoration:none;
-    color:var(--title-color);
+    color:var(--secondary-highlight);
+    border-radius:10px;
+    background-color: #1fb8eb34;
+    border-radius:10px;
+    transition:background-color 0.5s ease-out;
+}
+header nav ul li a:hover {
+    background-color:var(--main-highlight);
 }
 .title {
     display:flex;
     padding:20px;
     align-items: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .title h1 {
     padding:5px;
     font-size:38px;
     font-family: 'Charmonman', cursive;
-    color:var(--title-color);
+    color:var(--secondary-color);
 }
 /**/
 
@@ -80,8 +85,10 @@ header nav ul li a {
 .btn {
     cursor: pointer;
 }
+
 /**/
 
+/**/
 
 
 /* footer section */
@@ -93,18 +100,3 @@ footer {
     background-color:var(--main-color);
     width:100%;
 }
-.email {
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-color: var(--grid-color);
-    background-image:url(../images/email.svg);
-}
-.phone {
-    background-size:contain;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-color: var(--grid-color);
-    background-image:url(../images/old-typical-phone.svg);
-}
-    

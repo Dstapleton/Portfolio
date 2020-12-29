@@ -35,7 +35,7 @@
     text-indent:20px;
     widows: 100%;
     padding:5px;
-    background-color: #c7ad3ade;
+    background-color: #584051de;
     position:relative;
     z-index:1;
 }
@@ -64,6 +64,11 @@
 .comingsoon {
     box-shadow:0;
     transition:box-shadow 0.3s ease-out;
+}
+.runbuddy:hover h3,
+.comingsoon:hover h3,
+.passwordgenerator:hover h3 {
+    background-color: #c7ad3ade;
 }
 
 .runbuddy:hover,

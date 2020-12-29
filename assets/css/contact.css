@@ -3,17 +3,62 @@
     height:15vh;
 }
 .contactgrid {
-    display:grid;
-    grid-gap:10px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
     width:100%;
-    grid-template-columns:0.5fr repeat(2,2fr);
-    padding:10px;
 }
-.contactgrid-1 {
+.contactgrid > div {
+   margin:10px;
+   border-radius:20px;
+}
+
+
+.contacttle {
     display:flex;
     writing-mode:vertical-lr;
     transform:rotate(180deg);
     align-items:center;
     justify-content:center;
-    background-color:var(--main-color);
+    flex-grow:0.5;
+    background-color:var(--secondary-color);
 }
+.email, .phone {
+    flex-grow:2;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color: var(--main-color);
+}
+.email {
+    background-image:url(../images/email.svg);
+}
+.phone {
+    background-image:url(../images/old-typical-phone.svg);
+}
+.email div, .phone div {
+    height:100%;
+    border-radius:20px;
+    overflow:hidden;
+    background-color:none;
+    transition:background-color 1s ease-out;
+}
+.email div > *, .phone div > *{
+    opacity:0;
+    font-size:18px;
+    color:var(--secondary-color);
+    margin-left:10px;
+    position:relative;
+    bottom:-200px;
+    transition-property:opacity, bottom;
+    transition:all 0.5s ease-out;
+    z-index:1;
+}
+.email div:hover, .phone div:hover {
+   background-color:#00779E;
+}
+.email div:hover > *, .phone div:hover > * {
+    opacity:1;
+    bottom:-50px;
+}
+
