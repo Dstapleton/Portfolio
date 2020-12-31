@@ -16,6 +16,7 @@
 }
 .aboutme-content article {
     display:flex;
+    flex-wrap:nowrap;
     justify-content:space-between;
 }
 .aboutme-content article img {
@@ -28,7 +29,8 @@
     margin:10px 10px 0 10px;
     color:var(--secondary-color);
 }
-.aboutme-content, .blog-content article p {
+.aboutme-content article p,
+.blog-content article p {
     font-size: 1.2rem;
 }
 .aboutme-title h2,
@@ -49,7 +51,8 @@
 .accordion {
     position: relative;
 }
-.active, .accordion:hover h2{
+.active,
+ .accordion:hover h2{
     color:var(--secondary-highlight);
     background-color:var(--tertiary-color);
 }
@@ -57,7 +60,7 @@
     position:absolute;
     content:'\002B';
     font-size:30px;
-    color: rgb(84, 167, 139);
+    color:var(--secondary-color);
     top:10%;
     left:90%;
 }

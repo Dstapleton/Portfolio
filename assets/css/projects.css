@@ -21,6 +21,7 @@
     height:60vh;
     padding:5px;
 }
+
 .runbuddy {
     grid-column:1/ span 2;
     grid-row:1 / span 1;
@@ -33,7 +34,7 @@
 .passwordgenerator h3,
 .comingsoon h3 {
     text-indent:20px;
-    widows: 100%;
+    width:100%;
     padding:5px;
     background-color:var(--secondary-color);
     position:relative;
@@ -44,6 +45,7 @@
 .passwordgenerator {
     background-image:url(../images/passwordgenerator.png);
     background-size:cover;
+    background-repeat:no-repeat;
     background-position:center center;
     background-attachment:local;
 }
@@ -60,23 +62,42 @@
     background-position:center bottom;
     background-attachment:fixed;
 }
+.runbuddy p,
+.passwordgenerator p,
+.comingsoon p {
+    font-size:22px;
+    font-weight:bold;
+    width:100%;
+    position:absolute;
+    top:100%;
+    z-index:1;
+    color:var(--secondary-highlight);
+    text-align:center;
+    transition:top 0.5s ease-out;
+}
+
 /* Transitions */
 .runbuddy,
 .passwordgenerator,
 .comingsoon {
+    overflow:hidden;
     box-shadow:0;
     transition:box-shadow 0.3s ease-out;
+}
+.runbuddy:hover p,
+ .passwordgenerator:hover p,
+ .comingsoon:hover p {
+    top:50%;
+}
+.runbuddy:hover,
+.comingsoon:hover,
+.passwordgenerator:hover {
+    box-shadow:0 10px 8px rgb(1, 33, 39);
 }
 .runbuddy:hover h3,
 .comingsoon:hover h3,
 .passwordgenerator:hover h3 {
     background-color:var(--secondary-highlight);
-}
-
-.runbuddy:hover,
-.comingsoon:hover,
-.passwordgenerator:hover {
-    box-shadow:0 10px 8px rgb(1, 33, 39);
 }
 .runbuddy:after, 
 .comingsoon::after,
