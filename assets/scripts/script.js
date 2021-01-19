@@ -9,6 +9,7 @@ var runbuddy =  document.getElementById("runbuddy");
 var password = document.getElementById("genetor");
 var unitygame = document.getElementById("unitygameapp");
 var quiz = document.getElementById("quiz");
+var weather_app = document.getElementById("weatherapp");
 var robotgame = document.getElementById("robotgame");
 // footer links 
 var linkedinlink = document.getElementById("linkedin");
@@ -53,6 +54,15 @@ function runbuddysite() {
 function genertorapp() {
     window.open("https://dstapleton.github.io/password-generator/");
 }
+
+// weather  server side API application 
+function weatherApp () {
+    window.open("https://dstapleton.github.io/WeatherApp/");
+}
+//
+function quzzMe (){
+    window.open("https://dstapleton.github.io/Quiz/");
+}
 // -- events -- //
 
 //event listener for accordion on aboutme setion
@@ -62,9 +72,9 @@ for(i = 0; i < acc.length; i++){
 // projects
 password.addEventListener("click", genertorapp);
 runbuddy.addEventListener("click", runbuddysite);
-
+weather_app.addEventListener("click",weatherApp);
 robotgame.addEventListener("click",comingsoon);
-quiz.addEventListener("click", comingsoon);
+quiz.addEventListener("click", quzzMe);
 unitygame.addEventListener("click", comingsoon);
 
 // media links
