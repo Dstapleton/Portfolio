@@ -73,7 +73,6 @@ for(i = 0; i < acc.length; i++){
 password.addEventListener("click", genertorapp);
 runbuddy.addEventListener("click", runbuddysite);
 weather_app.addEventListener("click",weatherApp);
-robotgame.addEventListener("click",comingsoon);
 quiz.addEventListener("click", quzzMe);
 unitygame.addEventListener("click", comingsoon);
 
