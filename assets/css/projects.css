@@ -28,19 +28,11 @@
     background-position:center center;
     background-attachment:local;
 }
-.runbuddy h3,
-.passwordgenerator h3,
-.quizzme h3,
-.weather_app h3,
-.comingsoon h3 {
-    text-indent:20px;
-    width:100%;
-    padding:5px;
-    background-color:var(--secondary-color);
-    position:relative;
-    z-index:1;
-    color:var(--main-color);
-    transition:background-color 0.5s ease-out;
+.covid {
+    background-image:url(../images/covid_dashboard.png);
+    background-size:cover;
+    background-position:center center;
+    background-attachment:local;
 }
 .passwordgenerator {
     background-image:url(../images/passwordgenerator.png);
@@ -48,14 +40,6 @@
     background-repeat:no-repeat;
     background-position:center center;
     background-attachment:local;
-}
-.passwordgenerator,
-.runbuddy,
-.quizzme,
-.weather_app,
-.comingsoon {
-    position:relative;
-    background-color:rgb(17, 131, 160);
 }
 .quizzme {
     background-image:url(../images/QuzzMe.png);
@@ -79,10 +63,37 @@
     background-position:center bottom;
     background-attachment:fixed;
 }
+.runbuddy h3,
+.passwordgenerator h3,
+.quizzme h3,
+.weather_app h3,
+.covid h3,
+.comingsoon h3 {
+    text-indent:20px;
+    width:100%;
+    padding:5px;
+    background-color:var(--secondary-color);
+    position:relative;
+    z-index:1;
+    color:var(--main-color);
+    transition:background-color 0.5s ease-out;
+}
+
+.passwordgenerator,
+.runbuddy,
+.quizzme,
+.weather_app,
+.covid,
+.comingsoon {
+    position:relative;
+    background-color:rgb(17, 131, 160);
+}
+
 .runbuddy p,
 .passwordgenerator p,
 .quizzme p,
 .weather_app p,
+.covid p,
 .comingsoon p {
     font-size:22px;
     font-weight:bold;
@@ -100,6 +111,7 @@
 .passwordgenerator,
 .quizzme,
 .weather_app,
+.covid,
 .comingsoon {
     overflow:hidden;
     box-shadow:0;
@@ -109,6 +121,7 @@
 .passwordgenerator:hover p,
 .quizzme:hover p,
 .weather_app:hover p,
+.covid:hover p,
 .comingsoon:hover p {
     padding:0 5px 5px 5px;
     top:30%;
@@ -117,6 +130,7 @@
 .comingsoon:hover,
 .passwordgenerator:hover,
 .weather_app:hover,
+.covid:hover,
 .quizzme:hover {
     box-shadow:0 10px 8px rgb(1, 33, 39);
 }
@@ -124,6 +138,7 @@
 .comingsoon:hover h3,
 .passwordgenerator:hover h3,
 .quizzme:hover h3,
+.covid:hover h3,
 .weather_app:hover h3 {
     background-color:var(--secondary-highlight);
 }
@@ -131,6 +146,7 @@
 .comingsoon::after,
 .passwordgenerator::after,
 .quizzme::after,
+.covid::after,
 .weather_app::after { 
     content:"";
     position:absolute;
@@ -145,6 +161,7 @@
 .comingsoon:hover::after,
 .passwordgenerator:hover::after,
 .quizzme:hover::after,
+.covid:hover::after,
 .weather_app:hover::after {
     height:100%;
 }

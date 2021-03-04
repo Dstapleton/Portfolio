@@ -7,7 +7,7 @@ var i;
 // project links
 var runbuddy =  document.getElementById("runbuddy");
 var password = document.getElementById("genetor");
-var unitygame = document.getElementById("unitygameapp");
+var covid_dashboard = document.getElementById("covid_dash");
 var quiz = document.getElementById("quiz");
 var weather_app = document.getElementById("weatherapp");
 var robotgame = document.getElementById("robotgame");
@@ -63,6 +63,10 @@ function weatherApp () {
 function quzzMe (){
     window.open("https://dstapleton.github.io/Quiz/");
 }
+//
+function covidDashboard(){
+    window.open("https://runtime-terrors-organization.github.io/covid-dashboard-application/");
+}
 // -- events -- //
 
 //event listener for accordion on aboutme setion
@@ -74,7 +78,7 @@ password.addEventListener("click", genertorapp);
 runbuddy.addEventListener("click", runbuddysite);
 weather_app.addEventListener("click",weatherApp);
 quiz.addEventListener("click", quzzMe);
-unitygame.addEventListener("click", comingsoon);
+covid_dashboard.addEventListener("click", covidDashboard);
 
 // media links
 linkedinlink.addEventListener("click",comingsoon);
