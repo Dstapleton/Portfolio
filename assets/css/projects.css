@@ -1,82 +1,90 @@
 /* projects */
 .project {
-    flex-direction: column;
+  flex-direction: column;
 }
 .project-title {
-    background-color:var(--main-color);
-    margin:0 5px 10px 5px;
-    border-radius:5px;
+  background-color: var(--main-color);
+  margin: 0 5px 10px 5px;
+  border-radius: 5px;
 }
 .project-title h2 {
-    padding:10px;
-    color:var(--secondary-color);
+  padding: 10px;
+  color: var(--secondary-color);
 }
 .projectgrid {
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows:repeat(2,1fr);
-    grid-gap:20px;
-    justify-content:space-between;
-    height:60vh;
-    padding:5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: space-between;
+  height: 60vh;
+  padding: 5px;
 }
 .runbuddy {
-    grid-column:1/ span 2;
-    grid-row:1 / span 1;
-    background-image:url(../images/runbuddy.png);
-    background-size:cover;
-    background-position:center center;
-    background-attachment:local;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  background-image: url(../images/runbuddy.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: local;
 }
 .covid {
-    background-image:url(../images/covid_dashboard.png);
-    background-size:cover;
-    background-position:center center;
-    background-attachment:local;
+  background-image: url(../images/covid_dashboard.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: local;
 }
 .passwordgenerator {
-    background-image:url(../images/passwordgenerator.png);
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-attachment:local;
+  background-image: url(../images/passwordgenerator.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
 }
 .quizzme {
-    background-image:url(../images/QuzzMe.png);
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-attachment:local;
-
+  background-image: url(../images/QuzzMe.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
 }
 .weather_app {
-    background-image:url(../images/WeatherApp.png);
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-attachment:local;
+  background-image: url(../images/WeatherApp.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+}
+.e_commerce {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 1;
+  background-image: url(../images/shoppingBasket.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: local;
 }
 .comingsoon {
-    background-image:url(../images/coming_soon.svg);
-    background-size:90% 70%;
-    background-repeat:no-repeat;
-    background-position:center bottom;
-    background-attachment:fixed;
+  background-image: url(../images/coming_soon.svg);
+  background-size: 90% 70%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
 }
 .runbuddy h3,
 .passwordgenerator h3,
 .quizzme h3,
 .weather_app h3,
 .covid h3,
+.e_commerce h3,
 .comingsoon h3 {
-    text-indent:20px;
-    width:100%;
-    padding:5px;
-    background-color:var(--secondary-color);
-    position:relative;
-    z-index:1;
-    color:var(--main-color);
-    transition:background-color 0.5s ease-out;
+  text-indent: 20px;
+  width: 100%;
+  padding: 5px;
+  background-color: var(--secondary-color);
+  position: relative;
+  z-index: 1;
+  color: var(--main-color);
+  transition: background-color 0.5s ease-out;
 }
 
 .passwordgenerator,
@@ -84,9 +92,10 @@
 .quizzme,
 .weather_app,
 .covid,
+.e_commerce,
 .comingsoon {
-    position:relative;
-    background-color:rgb(17, 131, 160);
+  position: relative;
+  background-color: rgb(17, 131, 160);
 }
 
 .runbuddy p,
@@ -94,16 +103,17 @@
 .quizzme p,
 .weather_app p,
 .covid p,
+.e_commerce p,
 .comingsoon p {
-    font-size:22px;
-    font-weight:bold;
-    width:100%;
-    position:absolute;
-    top:100%;
-    z-index:1;
-    color:var(--secondary-highlight);
-    text-align:center;
-    transition:top 0.5s ease-out;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  color: var(--secondary-highlight);
+  text-align: center;
+  transition: top 0.5s ease-out;
 }
 
 /* Transitions */
@@ -112,58 +122,64 @@
 .quizzme,
 .weather_app,
 .covid,
+.e_commerce,
 .comingsoon {
-    overflow:hidden;
-    box-shadow:0;
-    transition:box-shadow 0.3s ease-out;
+  overflow: hidden;
+  box-shadow: 0;
+  transition: box-shadow 0.3s ease-out;
 }
 .runbuddy:hover p,
 .passwordgenerator:hover p,
 .quizzme:hover p,
 .weather_app:hover p,
 .covid:hover p,
+.e_commerce:hover p,
 .comingsoon:hover p {
-    padding:0 5px 5px 5px;
-    top:30%;
+  padding: 0 5px 5px 5px;
+  top: 25%;
 }
 .runbuddy:hover,
 .comingsoon:hover,
 .passwordgenerator:hover,
 .weather_app:hover,
 .covid:hover,
+.e_commerce:hover,
 .quizzme:hover {
-    box-shadow:0 10px 8px rgb(1, 33, 39);
+  box-shadow: 0 10px 8px rgb(1, 33, 39);
 }
 .runbuddy:hover h3,
 .comingsoon:hover h3,
 .passwordgenerator:hover h3,
 .quizzme:hover h3,
 .covid:hover h3,
-.weather_app:hover h3 {
-    background-color:var(--secondary-highlight);
+.weather_app:hover h3,
+.e_commerce:hover h3 {
+  background-color: var(--secondary-highlight);
 }
-.runbuddy:after, 
+.runbuddy:after,
 .comingsoon::after,
 .passwordgenerator::after,
 .quizzme::after,
 .covid::after,
-.weather_app::after { 
-    content:"";
-    position:absolute;
-    background:linear-gradient(rgba(140, 0, 255, 0.472),var(--tertiary-color));
-    width:100%;
-    height:0;
-    bottom:0;
-    overflow:hidden;
-    transition:height 0.3s ease-out;
+.weather_app::after,
+.e_commerce::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(rgba(140, 0, 255, 0.472), var(--tertiary-color));
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
 }
 .runbuddy:hover::after,
 .comingsoon:hover::after,
 .passwordgenerator:hover::after,
 .quizzme:hover::after,
 .covid:hover::after,
-.weather_app:hover::after {
-    height:100%;
+.weather_app:hover::after,
+.e_commerce:hover::after {
+  height: 100%;
 }
 
 /**/
